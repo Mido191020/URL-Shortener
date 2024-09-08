@@ -17,7 +17,6 @@ A simple URL shortener service built with Node.js, Express, and MongoDB. This pr
 - **MongoDB**: NoSQL database to store URLs.
 - **Pug**: Templating engine for the front-end.
 - **Mongoose**: MongoDB object modeling for Node.js.
-- **Axios**: HTTP client for API calls (for future expansions).
 
 ## Installation
 
