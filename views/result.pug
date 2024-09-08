@@ -9,21 +9,35 @@ html(lang="en")
     title Shortened URL
     style.
       body {
-        background-color: #f0f2f5;
+        background-color: #333;
+        color: white;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        margin: 0;
+      }
+      .header {
+        background-color: #1a5f7a;
+        padding: 20px;
+        text-align: center;
+      }
+      .header h1 {
+        margin: 0;
+        color: white;
       }
       .main-container {
         flex: 1;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2rem 0;
+        padding: 20px;
+      }
+      .content-wrapper {
+        width: 100%;
+        max-width: 700px;
       }
       .card {
-        width: 100%;
-        max-width: 500px;
+        background-color: #444;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
       .card-header {
@@ -39,35 +53,40 @@ html(lang="en")
         background-color: #218838;
         border-color: #1e7e34;
       }
+      .btn-secondary {
+        background-color: #1a5f7a;
+        border-color: #1a5f7a;
+      }
+      .btn-secondary:hover {
+        background-color: #154b61;
+        border-color: #154b61;
+      }
       .footer {
-        background-color: #343a40;
+        background-color: #1a5f7a;
         color: #ffffff;
         text-align: center;
         padding: 1rem 0;
         margin-top: auto;
       }
   body
-    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-      .container
-        a.navbar-brand(href="/") URL Shortener
+    header.header
+      h1 URL Shortener
     .main-container
-      .container
-        .row.justify-content-center
-          .col-md-8
-            .card
-              .card-header.text-center
-                h1.h4.mb-0 Your Shortened URL
-              .card-body
-                p.lead.text-center Here's your shortened URL:
-                .input-group.mb-3
-                  input#shortUrl.form-control(type="text", value=shortUrl, readonly)
-                  .input-group-append
-                    button#copyBtn.btn.btn-outline-secondary(type="button")
-                      i.fas.fa-copy
-                .text-center.mt-3
-                  a.btn.btn-success(href=shortUrl, target="_blank") Open Shortened URL
-                form.mt-4(action="/", method="get")
-                  button.btn.btn-secondary.btn-block(type="submit") Shorten Another URL
+      .content-wrapper
+        .card
+          .card-header.text-center
+            h2.h4.mb-0 Your Shortened URL
+          .card-body
+            p.lead.text-center Here's your shortened URL:
+            .input-group.mb-3
+              input#shortUrl.form-control(type="text", value=shortUrl, readonly)
+              .input-group-append
+                button#copyBtn.btn.btn-outline-light(type="button")
+                  i.fas.fa-copy
+            .text-center.mt-3
+              a.btn.btn-success(href=shortUrl, target="_blank") Open Shortened URL
+            form.mt-4(action="/", method="get")
+              button.btn.btn-secondary.btn-block(type="submit") Shorten Another URL
     footer.footer
       .container
         p.mb-0 &copy; 2024 URL Shortener. All rights reserved.
@@ -81,3 +100,5 @@ html(lang="en")
         document.execCommand('copy');
         alert('Copied to clipboard!');
       });
+
+      
