@@ -2,8 +2,8 @@
 
 A sleek and efficient URL shortening service built with **Node.js**, **Express**, and **MongoDB**. This project allows users to transform long, unwieldy URLs into short, easy-to-share links with just a click.
 
-![URL Shortener Input](https://example.com/path/to/image1.jpg)
-![URL Shortener Result](https://example.com/path/to/image2.jpg)
+![URL Shortener Input](https://github.com/Mido191020/URL-Shortener/blob/main/Screenshot%202024-09-08%20163836.png)
+![URL Shortener Result](https://github.com/Mido191020/URL-Shortener/blob/main/Screenshot%202024-09-08%20163830.png)
 
 ## Features
 
