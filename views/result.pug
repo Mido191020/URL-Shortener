@@ -1,0 +1,222 @@
+//- //- //- //- extends layout
+
+//- //- //- //- block content
+//- //- //- //-   h1 Your Shortened URL
+//- //- //- //-   p Here's your shortened URL:
+//- //- //- //-   a(href=shortUrl)= shortUrl
+//- //- //- //-   p
+//- //- //- //-     a(href="/") Shorten another URL
+//- //- //- doctype html
+//- //- //- html(lang="en")
+//- //- //-   head
+//- //- //-     meta(charset="UTF-8")
+//- //- //-     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//- //- //-     title Your Shortened URL
+//- //- //-     style.
+//- //- //-       body {
+//- //- //-         font-family: Arial, sans-serif;
+//- //- //-         margin: 0;
+//- //- //-         padding: 0;
+//- //- //-         background-color: #f4f4f4;
+//- //- //-         color: #333;
+//- //- //-       }
+//- //- //-       .header {
+//- //- //-         background-color: #007bff;
+//- //- //-         padding: 20px;
+//- //- //-         text-align: center;
+//- //- //-         color: white;
+//- //- //-       }
+//- //- //-       .header h1 {
+//- //- //-         margin: 0;
+//- //- //-       }
+//- //- //-       .result-container {
+//- //- //-         max-width: 500px;
+//- //- //-         margin: 50px auto;
+//- //- //-         padding: 20px;
+//- //- //-         background-color: white;
+//- //- //-         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//- //- //-         border-radius: 8px;
+//- //- //-         text-align: center;
+//- //- //-       }
+//- //- //-       a.short-url {
+//- //- //-         display: block;
+//- //- //-         margin-top: 20px;
+//- //- //-         padding: 10px;
+//- //- //-         background-color: #007bff;
+//- //- //-         color: white;
+//- //- //-         text-decoration: none;
+//- //- //-         border-radius: 4px;
+//- //- //-       }
+//- //- //-       a.short-url:hover {
+//- //- //-         background-color: #0056b3;
+//- //- //-       }
+//- //- //-       .back-link {
+//- //- //-         display: inline-block;
+//- //- //-         margin-top: 20px;
+//- //- //-         color: #007bff;
+//- //- //-         text-decoration: none;
+//- //- //-       }
+//- //- //-       .back-link:hover {
+//- //- //-         text-decoration: underline;
+//- //- //-       }
+
+//- //- //-   body
+//- //- //-     .header
+//- //- //-       h1 URL Shortener
+//- //- //-     .result-container
+//- //- //-       h1 Your Shortened URL
+//- //- //-       p Here's your shortened URL:
+//- //- //-       a.short-url(href=shortUrl)= shortUrl
+//- //- //-       a.back-link(href="/") Shorten another URL
+//- //- doctype html
+//- //- html(lang="en")
+//- //-   head
+//- //-     meta(charset="UTF-8")
+//- //-     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//- //-     title Your Shortened URL
+//- //-     style.
+//- //-       body {
+//- //-         font-family: Arial, sans-serif;
+//- //-         margin: 0;
+//- //-         padding: 0;
+//- //-         background-color: #f4f4f4;
+//- //-         color: #333;
+//- //-       }
+//- //-       .header {
+//- //-         background-color: #007bff;
+//- //-         padding: 20px;
+//- //-         text-align: center;
+//- //-         color: white;
+//- //-       }
+//- //-       .header h1 {
+//- //-         margin: 0;
+//- //-       }
+//- //-       .result-container {
+//- //-         max-width: 500px;
+//- //-         margin: 50px auto;
+//- //-         padding: 20px;
+//- //-         background-color: white;
+//- //-         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//- //-         border-radius: 8px;
+//- //-         text-align: center;
+//- //-       }
+//- //-       a.short-url {
+//- //-         display: block;
+//- //-         margin-top: 20px;
+//- //-         padding: 10px;
+//- //-         background-color: #007bff;
+//- //-         color: white;
+//- //-         text-decoration: none;
+//- //-         border-radius: 4px;
+//- //-       }
+//- //-       a.short-url:hover {
+//- //-         background-color: #0056b3;
+//- //-       }
+//- //-       form.back-link-form {
+//- //-         margin-top: 20px;
+//- //-       }
+//- //-       button.back-link {
+//- //-         padding: 10px 20px;
+//- //-         background-color: #007bff;
+//- //-         color: white;
+//- //-         border: none;
+//- //-         border-radius: 4px;
+//- //-         cursor: pointer;
+//- //-       }
+//- //-       button.back-link:hover {
+//- //-         background-color: #0056b3;
+//- //-       }
+
+//- //-   body
+//- //-     .header
+//- //-       h1 URL Shortener
+//- //-     .result-container
+//- //-       h1 Your Shortened URL
+//- //-       p Here's your shortened URL:
+//- //-       a.short-url(href=shortUrl)= shortUrl
+//- //-       form.back-link-form(action="/") 
+//- //-         button.back-link(type="submit") Shorten another URL
+//- doctype html
+//- html(lang="en")
+//-   head
+//-     meta(charset="UTF-8")
+//-     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-     title Your Shortened URL
+//-     style.
+//-       body {
+//-         font-family: Arial, sans-serif;
+//-         margin: 0;
+//-         padding: 0;
+//-         background-color: #f4f4f4;
+//-         color: #333;
+//-       }
+//-       .header {
+//-         background-color: #007bff;
+//-         padding: 20px;
+//-         text-align: center;
+//-         color: white;
+//-       }
+//-       .header h1 {
+//-         margin: 0;
+//-       }
+//-       .result-container {
+//-         max-width: 500px;
+//-         margin: 50px auto;
+//-         padding: 20px;
+//-         background-color: white;
+//-         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//-         border-radius: 8px;
+//-         text-align: center;
+//-       }
+//-       a.short-url {
+//-         display: block;
+//-         margin-top: 20px;
+//-         padding: 10px;
+//-         background-color: #007bff;
+//-         color: white;
+//-         text-decoration: none;
+//-         border-radius: 4px;
+//-       }
+//-       a.short-url:hover {
+//-         background-color: #0056b3;
+//-       }
+//-       a.back-link {
+//-         display: inline-block;
+//-         margin-top: 20px;
+//-         padding: 10px 20px;
+//-         background-color: #007bff;
+//-         color: white;
+//-         text-decoration: none;
+//-         border-radius: 4px;
+//-       }
+//-       a.back-link:hover {
+//-         background-color: #0056b3;
+//-       }
+
+//-   body
+//-     .header
+//-       h1 URL Shortener
+//-     .result-container
+//-       h1 Your Shortened URL
+//-       p Here's your shortened URL:
+//-       a.short-url(href=shortUrl)= shortUrl
+//-       a.back-link(href="/" target="_blank") Shorten another URL
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
+    title Shortened URL
+  body
+    .container
+      .header
+        h1 URL Shortener
+      .result-container
+        h1 Your Shortened URL
+        p Here's your shortened URL:
+        p
+          a(href=shortUrl, class="btn btn-primary", target="_blank")= shortUrl
+        form(action="/", method="get")
+          button(type="submit", class="btn btn-secondary") Shorten another URL
